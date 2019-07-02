@@ -1,0 +1,7 @@
+diff a/public/views/index.html b/public/views/index.html	(rejected hunks)
+@@ -18 +18 @@
+-  <link rel="stylesheet" href="public/build/grafana.[[ .Theme ]].6d8eeeb9d8448dfedc01.css">
++  <link rel="stylesheet" href="public/build/grafana.[[ .Theme ]].a7e594465ac33d3593b8.css">
+@@ -238 +238 @@
+-<script type="text/javascript" src="public/build/vendor.6d8eeeb9d8448dfedc01.js"></script><script type="text/javascript" src="public/build/app.6d8eeeb9d8448dfedc01.js"></script></body>
++<script type="text/javascript" src="public/build/vendor.a7e594465ac33d3593b8.js"></script><script type="text/javascript" src="public/build/app.a7e594465ac33d3593b8.js"></script></body>
