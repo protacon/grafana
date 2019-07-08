@@ -11,7 +11,7 @@ export class InvitedCtrl {
       main: {
         icon: 'gicon gicon-branding',
         text: 'Invite',
-        subTitle: 'Register your Grafana account',
+        subTitle: 'Register your Log App account',
         breadcrumbs: [{ title: 'Login', url: 'login' }],
       },
     };
