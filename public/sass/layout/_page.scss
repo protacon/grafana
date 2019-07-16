@@ -11,12 +11,12 @@
 .main-view {
   position: relative;
   flex-grow: 1;
-  background: $page-gradient;
+  background: $ptc-gradient-blue;
 }
 
 .panel-in-fullscreen {
   .main-view {
-    background: $edit-gradient;
+    background: $ptc-gradient-blue;
   }
 }
 

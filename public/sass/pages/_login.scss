@@ -6,20 +6,19 @@ $login-border: #8daac5;
   background-repeat: no-repeat;
   min-width: 100%;
   margin-left: 0;
-  background-color: $black;
+  background-color: $ptc-gradient-blue;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../img/heatmap_bg_test.svg);
   background-size: cover;
-  color: #d8d9da;
+  color: $white;
 
   & a {
-    color: #d8d9da !important;
+    color: $white !important;
   }
 
   & .btn-primary {
-    @include buttonBackground(#ff6600, #bc3e06);
+    background-color: $ptc-light-blue;
     height: 40px;
   }
 }
@@ -56,8 +55,8 @@ select:-webkit-autofill:focus {
   border: 1px solid $login-border;
   border-radius: 4px;
   opacity: 0.6;
-  background: $black;
-  color: #fbfbfb;
+  background: $ptc-dark-blue;
+  color: $white;
 
   &:focus {
     border: 1px solid $login-border;
@@ -80,13 +79,13 @@ select:-webkit-autofill:focus {
     }
   }
   & .btn-inverse {
-    color: #e3e3e3;
-    text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.1);
-    background-color: #2a2a2c;
-    background-image: linear-gradient(to bottom, #262628, #303032);
+    color: $white;
+    //text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.1);
+    background-color: $ptc-light-blue;
+    //background-image: linear-gradient(to bottom, #262628, #303032);
     background-repeat: repeat-x;
     border-color: #262628;
-    box-shadow: -1px -1px 0 0 rgba(255, 255, 255, 0.1), 1px 1px 0 0 rgba(0, 0, 0, 0.3);
+    // box-shadow: -1px -1px 0 0 rgba(255, 255, 255, 0.1), 1px 1px 0 0 rgba(0, 0, 0, 0.3);
   }
 }
 
