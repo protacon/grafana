@@ -16,8 +16,6 @@ export interface State {
   dashboards: DashboardSearchHit[];
 }
 
-const themes = [{ value: '', label: 'Default' }, { value: 'dark', label: 'Dark' }, { value: 'light', label: 'Light' }];
-
 const timezones = [
   { value: '', label: 'Default' },
   { value: 'browser', label: 'Local browser time' },
@@ -98,21 +96,11 @@ export class SharedPreferences extends PureComponent<Props, State> {
   };
 
   render() {
-    const { theme, timezone, homeDashboardId, dashboards } = this.state;
+    const { timezone, homeDashboardId, dashboards } = this.state;
 
     return (
       <form className="section gf-form-group" onSubmit={this.onSubmitForm}>
         <h3 className="page-heading">Preferences</h3>
-        <div className="gf-form">
-          <span className="gf-form-label width-11">UI Theme</span>
-          <Select
-            isSearchable={false}
-            value={themes.find(item => item.value === theme)}
-            options={themes}
-            onChange={theme => this.onThemeChanged(theme.value)}
-            width={20}
-          />
-        </div>
         <div className="gf-form">
           <FormLabel
             width={11}
