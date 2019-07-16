@@ -5,7 +5,7 @@ $select-input-bg-disabled: $input-bg-disabled;
   width: 100%;
   margin-right: $space-xs;
   @include border-radius($input-border-radius-sm);
-  background-color: $input-bg;
+  background-color: $ptc-dark-blue;
 }
 
 @mixin select-control-focus() {
@@ -30,12 +30,12 @@ $select-input-bg-disabled: $input-bg-disabled;
 }
 
 .gf-form-select-box__control--is-focused {
-  background-color: $input-bg;
+  background-color: $ptc-dark-blue;
   @include select-control-focus();
 }
 
 .gf-form-select-box__control--is-disabled {
-  background-color: $select-input-bg-disabled;
+  background-color: $ptc-dark-blue;
 }
 
 .gf-form-select-box__control--menu-right {
@@ -53,7 +53,7 @@ $select-input-bg-disabled: $input-bg-disabled;
 }
 
 .gf-form-select-box__menu {
-  background: $menu-dropdown-bg;
+  background: $ptc-dark-blue;
   box-shadow: $menu-dropdown-shadow;
   position: absolute;
   z-index: $zindex-dropdown;
@@ -80,11 +80,11 @@ $select-input-bg-disabled: $input-bg-disabled;
 .gf-form-select-box__option {
   border-left: 2px solid transparent;
   white-space: nowrap;
-  background-color: $input-bg;
+  background-color: $ptc-dark-blue;
 
   &.gf-form-select-box__option--is-focused {
     color: $dropdownLinkColorHover;
-    background: $menu-dropdown-hover-bg;
+    background: $ptc-dark-blue;
     @include left-brand-border-gradient();
   }
 
