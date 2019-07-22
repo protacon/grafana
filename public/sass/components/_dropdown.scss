@@ -121,7 +121,7 @@
       &:hover {
         @include left-brand-border-gradient();
         color: $link-hover-color;
-        background: $menu-dropdown-hover-bg !important;
+        background: $ptc-background-menus !important;
       }
     }
   }
@@ -147,7 +147,7 @@
 .dropdown-submenu:focus > a {
   text-decoration: none;
   color: $dropdownLinkColorHover;
-  background-color: $dropdownLinkBackgroundHover;
+  background-color: $ptc-background-menus;
 }
 
 // Active state

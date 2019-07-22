@@ -20,7 +20,7 @@ $mobile-menu-breakpoint: md;
   }
 
   @include media-breakpoint-up($mobile-menu-breakpoint) {
-    background: $side-menu-bg;
+    background: $ptc-dark-blue;
     height: auto;
     box-shadow: $side-menu-shadow;
     position: relative;
@@ -60,7 +60,7 @@ $mobile-menu-breakpoint: md;
   @include media-breakpoint-up($mobile-menu-breakpoint) {
     &.active,
     &:hover {
-      background-color: $side-menu-item-hover-bg;
+      background-color: $ptc-dark-blue;
       @include left-brand-border-gradient();
 
       .dropdown-menu {
@@ -73,6 +73,7 @@ $mobile-menu-breakpoint: md;
         left: $side-menu-width - 2px;
         @include animation('dropdown-anim 150ms ease-in-out 100ms forwards');
         z-index: $zindex-sidemenu;
+        background-color: $ptc-background-menus !important;
       }
     }
   }
@@ -144,24 +145,29 @@ $mobile-menu-breakpoint: md;
 .side-menu-header {
   padding: 10px 10px 10px 20px;
   white-space: nowrap;
-  background-color: $side-menu-item-hover-bg;
+  background-color: $ptc-background-menus;
   font-size: 17px;
-  color: #ebedf2;
+  color: $ptc-sidemenu-link;
 }
 
 .side-menu-header-link {
   // Removes left-brand-border-gradient from link
-  color: #ebedf2 !important;
+  color: $ptc-sidemenu-link !important;
   border: none !important;
   padding: 0 !important;
 }
 
 .dropdown-menu--sidemenu > li > .side-menu-header-link:hover {
   // Makes sure it looks good on light theme
-  color: #fff !important;
-  background-color: $side-menu-item-hover-bg !important;
+  color: $ptc-sidemenu-link !important;
+  background-color: $ptc-background-menus !important;
 }
 
+.dropdown-menu--sidemenu > li > a {
+  color: $ptc-sidemenu-link !important;
+}
+
+/*It's about the  the email in the dropdown of the  bottom link of sidemenu */
 .sidemenu-subtitle {
   padding: $space-sm $space-md $space-sm;
   font-size: $font-size-sm;
@@ -205,7 +211,7 @@ li.sidemenu-org-switcher {
   height: $navbarHeight - 1px;
 
   &:hover {
-    background: $navbarButtonBackgroundHighlight;
+    background: $ptc-dark-blue;
   }
 
   img {
