@@ -28,6 +28,7 @@ $ptc-background-menus: #F5F5F5;
 $ptc-logs: #263671;
 $ptc-logs-temp-name: #000000;
 $ptc-gradient-blue: linear-gradient(to right,#1C2751,#374EA1);
+$ptc-sidemenu-link: #212E60;
 
 // Grays
 // -------------------------
