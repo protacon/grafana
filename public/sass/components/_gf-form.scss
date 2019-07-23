@@ -40,14 +40,14 @@ $input-border: 1px solid $input-border-color;
     margin-top: -9px;
     font-size: $font-size-lg;
     left: 10px;
-    color: $input-color-placeholder;
+    color: $white;
   }
 
   > input {
     padding-left: 35px;
 
     &:focus + .gf-form-input-icon {
-      color: $text-muted;
+      color: $white;
     }
   }
 
@@ -58,7 +58,7 @@ $input-border: 1px solid $input-border-color;
 }
 
 .gf-form-disabled {
-  color: $text-color-weak;
+  color: $white;
 
   .gf-form-select-wrapper::after {
     color: $white;
@@ -170,12 +170,12 @@ $input-border: 1px solid $input-border-color;
   font-size: $font-size-md;
   line-height: $input-line-height;
   color: $white;
-  background-color: $ptc-dark-blue;
+  background-color: rgba(28, 39, 81, 0.6);
+  //opacity: 0.6;
   //background-image: none;
   background-clip: padding-box;
-  border: $input-border;
-  border-radius: $input-border-radius;
-  @include box-shadow($input-box-shadow);
+  //border: $input-border;
+  border-radius: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -199,8 +199,8 @@ $input-border: 1px solid $input-border-color;
 
   // Placeholder
   &::placeholder {
-    color: $input-color-placeholder;
-    opacity: 1;
+    color: $white;
+    opacity: 0.5;
   }
 
   &:disabled,
