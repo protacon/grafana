@@ -28,6 +28,10 @@ $input-border: 1px solid $input-border-color;
       padding: 4px 0;
     }
   }
+  a,
+  .fa {
+    color: $white;
+  }
 }
 
 .gf-form--has-input-icon {

@@ -28,10 +28,10 @@ gf-form-switch[disabled] {
   position: relative;
   width: 56px;
   height: $input-height;
-  background: $switch-bg;
+  background: $ptc-dark-blue;
   border: 1px solid $input-border-color;
   border-left: none;
-  border-radius: $input-border-radius;
+  border-radius: 5px;
   align-items: center;
   justify-content: center;
   input {
@@ -49,7 +49,7 @@ gf-form-switch[disabled] {
 
 /* The slider */
 .gf-form-switch__slider {
-  background: $switch-slider-off-bg;
+  background: $black;
   border-radius: 8px;
   height: 16px;
   width: 32px;
@@ -63,7 +63,7 @@ gf-form-switch[disabled] {
     width: 12px;
     left: 2px;
     top: 2px;
-    background: $switch-slider-color;
+    background: $ptc-dark-blue;
     transition: 0.4s;
     border-radius: 50%;
     box-shadow: $switch-slider-shadow;
@@ -71,7 +71,7 @@ gf-form-switch[disabled] {
 }
 
 input:checked + .gf-form-switch__slider {
-  background: $switch-slider-on-bg;
+  background: $white;
 }
 
 input:checked + .gf-form-switch__slider::before {
