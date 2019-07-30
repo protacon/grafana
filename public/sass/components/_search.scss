@@ -9,6 +9,10 @@
   @include opacity(75);
 }
 
+.search-field-wrapper {
+  background-color: $ptc-dark-blue !important;
+}
+
 .search-container {
   left: 0;
   top: 0;
@@ -16,6 +20,17 @@
   bottom: 0;
   z-index: ($zindex-modal-backdrop + 10);
   position: fixed;
+  .fa {
+    color: white;
+  }
+  input {
+    background-color: $ptc-dark-blue;
+    color: $white !important;
+    &::placeholder {
+      color: $white !important;
+      opacity: 0.5;
+    }
+  }
 }
 
 // Search
@@ -26,7 +41,7 @@
 }
 
 .search-dropdown__col_1 {
-  background: $page-bg;
+  background: $ptc-dark-blue;
   max-width: 700px;
   display: flex;
   flex-direction: column;
@@ -47,7 +62,7 @@
 }
 
 .search-filter-box {
-  background: $search-filter-box-bg;
+  background: $ptc-dark-blue;
   border-radius: 2px;
   padding: $spacer * 1.5;
   min-width: 340px;
@@ -55,8 +70,12 @@
 }
 
 .search-filter-box__header {
-  border-bottom: 1px solid $hr-border-color;
+  border-bottom: 1px solid #777d96;
   margin-bottom: $spacer * 1.5;
+  color: $white;
+  a {
+    color: $white;
+  }
 }
 
 .search-filter-box-link {
@@ -104,17 +123,16 @@
 }
 
 .search-section {
-  background: $panel-bg;
-  border: $panel-border;
+  background: #1f2c5c;
   padding: 0px 4px 4px 4px;
   margin-bottom: 3px;
-  border-radius: 5px;
+  border-radius: 5px !important;
 }
 
 .search-section__header {
   font-size: $font-size-h6;
   padding: 7px 4px 3px 0;
-  color: $text-color-weak;
+  color: $white;
   display: flex;
   flex-grow: 1;
 
@@ -143,6 +161,7 @@
 .search-section__header__text {
   flex-grow: 1;
   line-height: 24px;
+  color: $white;
 }
 
 .search-section__header__link {
@@ -153,14 +172,13 @@
 }
 
 .search-item {
-  @include list-item();
-
   display: flex;
   flex-grow: 1;
   height: 37px;
   white-space: nowrap;
   padding: 0px;
-
+  border-radius: 5px !important;
+  box-shadow: none !important;
   &:hover,
   &.selected {
     background: $list-item-hover-bg;
@@ -178,14 +196,15 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 10px;
+  background-color: #263671;
 }
 
 .search-item__body-title {
-  color: $list-item-link-color;
+  color: $white;
 }
 
 .search-item__body-folder-title {
-  color: $text-color-weak;
+  color: $white;
   font-size: $font-size-xs;
   line-height: 11px;
   position: relative;
@@ -198,11 +217,15 @@
   flex: 0 0 auto;
   font-size: 19px;
   padding: 0 2px 0 10px;
+  background-color: #263671;
+  border-radius: 5px 0px 0px 5px;
 }
 
 .search-item__tags {
   display: none;
   padding: 10px;
+  background-color: #263671;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .search-item__actions {
