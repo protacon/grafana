@@ -344,6 +344,15 @@
   border-left-width: 2px;
 }
 
+@mixin left-brand-border-gradient-without-slice() {
+  border-image: linear-gradient($white 100%);
+  border-style: solid;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left-width: 2px;
+}
+
 @mixin brand-bottom-border() {
   border-image: linear-gradient($white 100%);
   border-image-slice: 1;

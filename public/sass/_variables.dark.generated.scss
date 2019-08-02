@@ -124,7 +124,7 @@ $hr-border-color: $dark-9;
 // -------------------------
 $panel-bg: $dark-4;
 $panel-border: solid 1px $dark-1;
-$panel-header-hover-bg: $dark-9;
+$panel-header-hover-bg: none;
 $panel-corner: $panel-bg;
 
 // page header
@@ -156,9 +156,9 @@ $list-item-shadow: $card-shadow;
 $empty-list-cta-bg: $gray-blue;
 
 // Scrollbars
-$scrollbarBackground: #404357;
-$scrollbarBackground2: $dark-10;
-$scrollbarBorder: black;
+$scrollbarBackground: #1f2c5c;
+$scrollbarBackground2: #1f2c5c;
+$scrollbarBorder: none;
 
 // Tables
 // -------------------------

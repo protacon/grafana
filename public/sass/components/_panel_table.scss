@@ -36,14 +36,15 @@
     padding: 4px 12px;
     text-decoration: none;
     border-left-width: 0;
+    color: $white;
 
     &:hover {
-      background-color: $tight-form-func-bg;
+      background-color: $ptc-logs;
     }
 
     &.active {
       font-weight: bold;
-      color: $blue;
+      color: $ptc-dark-blue;
     }
   }
 }
@@ -64,8 +65,8 @@
 
   td {
     padding: 0.45em 0 0.45em 1.1em;
-    border-bottom: 2px solid $body-bg;
-    border-right: 2px solid $body-bg;
+    border-bottom: 1px solid $white;
+    border-right: 1px solid $white;
 
     &:first-child {
       padding-left: 15px;
@@ -112,20 +113,19 @@
 }
 
 .table-panel-header-bg {
-  background: $list-item-bg;
-  border-top: 2px solid $body-bg;
-  border-bottom: 2px solid $body-bg;
+  background: #1f2c5c;
   height: 2em;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
+  border-radius: 5px;
 }
 
 .table-panel-table-header-inner {
   padding: 0.3em 0 0.45em 1.1em;
   text-align: left;
-  color: $blue;
+  color: $white;
   position: absolute;
   top: 0;
 }

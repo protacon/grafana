@@ -154,9 +154,9 @@ $list-item-shadow: $card-shadow;
 $empty-list-cta-bg: $gray-blue;
 
 // Scrollbars
-$scrollbarBackground: #404357;
-$scrollbarBackground2: $dark-10;
-$scrollbarBorder: black;
+$scrollbarBackground: #1F2C5C;;
+$scrollbarBackground2: #1F2C5C;
+$scrollbarBorder: none;
 
 // Tables
 // -------------------------
