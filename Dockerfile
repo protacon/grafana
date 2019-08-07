@@ -1,7 +1,7 @@
 # Golang build container
 FROM golang:1.12.4
 
-WORKDIR $GOPATH/src/github.com/grafana/grafana
+WORKDIR $GOPATH/src/github.com/protacon/logapp-grafana
 
 COPY go.mod go.sum ./
 COPY vendor vendor
