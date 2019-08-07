@@ -1,3 +1,5 @@
+library "jenkins-ptcs-library@0.6.1"
+
 // pod provides common utilies and tools to jenkins-ptcs-library function correctly.
 // certain ptcs-library command requires containers (like docker or gcloud.)
 podTemplate(label: pod.label,
@@ -10,7 +12,6 @@ podTemplate(label: pod.label,
       stage('Checkout') {
         checkout scm
       }
-      
       stage('Deploy') {
         def publishedImage = publishContainerToGcr(project);
       }
