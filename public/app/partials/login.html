@@ -16,7 +16,7 @@
               placeholder="{{passwordHint}}" aria-label="Password input field">
           </div>
           <div class="login-button-group">
-            <button type="submit" aria-label="Login button" class="btn  p-x-2" ng-if="!loggingIn" ng-click="submit();" ng-class="{'btn-inverse': !loginForm.$valid, 'btn-primary': loginForm.$valid}">
+            <button type="submit" aria-label="Login button" class="btn  p-x-2 btn-inverse" ng-if="!loggingIn" ng-click="submit();">
               Login
             </button>
             <button type="submit" class="btn  p-x-2 btn-inverse btn-loading" ng-if="loggingIn">
