@@ -98,6 +98,7 @@ $input-border: 1px solid $input-border-color;
   a,
   button {
     margin-right: $spacer;
+    color: $white;
   }
 }
 
@@ -109,6 +110,7 @@ $input-border: 1px solid $input-border-color;
   //background-color: $input-label-bg;
   display: block;
   height: $input-height;
+  color: $white;
 
   /* border: $border-width solid $input-label-border-color;
   border-right: none;

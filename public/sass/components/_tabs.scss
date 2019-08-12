@@ -18,7 +18,7 @@
   border: solid transparent;
   border-width: 0 1px 1px;
   border-radius: 3px 3px 0 0;
-  color: $text-color;
+  color: $white;
 
   i {
     margin-right: 5px;
@@ -39,7 +39,7 @@
   &.active:focus {
     //border-color: $orange $tab-border-color transparent;
     //background: $page-bg;
-    color: $link-color;
+    color: $white;
     overflow: hidden;
 
     &::before {
