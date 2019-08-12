@@ -20,6 +20,15 @@ $red-base: ${theme.colors.redBase};
 $red-shade: ${theme.colors.redShade};
 $green-base: ${theme.colors.greenBase};
 $green-shade: ${theme.colors.greenShade};
+$ptc-dark-blue: #1C2751;
+$ptc-light-blue: #374EA1;
+$ptc-green: #299B46;
+$ptc-background-diagrams: #6A76A1;
+$ptc-background-menus: #F5F5F5;
+$ptc-logs: #263671;
+$ptc-logs-temp-name: #000000;
+$ptc-gradient-blue: linear-gradient(to right,#1C2751,#374EA1);
+$ptc-sidemenu-link: #212E60;
 
 // Grays
 // -------------------------

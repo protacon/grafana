@@ -125,7 +125,7 @@ export default class PageHeader extends React.Component<Props, any> {
 
         <div className="page-header__info-block">
           {this.renderTitle(main.text, main.breadcrumbs)}
-          {main.subTitle && <div className="page-header__sub-title">{main.subTitle}</div>}
+          {/* {main.subTitle && <div className="page-header__sub-title">{main.subTitle}</div>} */}
         </div>
       </div>
     );

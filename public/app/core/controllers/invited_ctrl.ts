@@ -10,9 +10,9 @@ export class InvitedCtrl {
     $scope.navModel = {
       main: {
         icon: 'gicon gicon-branding',
-        text: 'Invite',
+        text: 'Invitation to Log App',
         subTitle: 'Register your Log App account',
-        breadcrumbs: [{ title: 'Login', url: 'login' }],
+        /*   breadcrumbs: [{ title: 'Login', url: 'login' }], */
       },
     };
 

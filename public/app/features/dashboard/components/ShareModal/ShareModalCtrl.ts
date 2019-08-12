@@ -26,13 +26,13 @@ export function ShareModalCtrl($scope, $rootScope, $location, $timeout, timeSrv,
       $scope.modalTitle = 'Share';
     }
 
-    if (!$scope.dashboard.meta.isSnapshot) {
+    /* if (!$scope.dashboard.meta.isSnapshot) {
       $scope.tabs.push({ title: 'Snapshot', src: 'shareSnapshot.html' });
     }
 
     if (!$scope.dashboard.meta.isSnapshot && !$scope.modeSharePanel) {
       $scope.tabs.push({ title: 'Export', src: 'shareExport.html' });
-    }
+    } */
 
     $scope.buildUrl();
   };

@@ -23,7 +23,7 @@
   position: fixed;
   z-index: $zindex-modal;
   width: 100%;
-  background: $page-bg;
+  background: $ptc-light-blue;
   @include box-shadow(0 3px 7px rgba(0, 0, 0, 0.3));
   @include background-clip(padding-box);
   outline: none;
@@ -37,8 +37,8 @@
 }
 
 .modal-header {
-  background: $page-header-bg;
-  box-shadow: $page-header-shadow;
+  background: $ptc-dark-blue;
+  //box-shadow: $page-header-shadow;
   border-bottom: 1px solid $page-header-border-color;
   @include clearfix();
 }
@@ -58,6 +58,9 @@
 .modal-header-close {
   float: right;
   padding: 9px $spacer;
+  .fa {
+    color: $white;
+  }
 }
 
 // Body (where all modal content resides)
@@ -168,6 +171,7 @@
 
   .share-modal-content {
     flex-grow: 1;
+    color: $white;
   }
 
   .tight-form {

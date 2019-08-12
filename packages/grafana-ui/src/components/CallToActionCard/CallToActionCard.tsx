@@ -1,6 +1,6 @@
 import React from 'react';
 import { Themeable, GrafanaTheme } from '../../types/theme';
-import { selectThemeVariant } from '../../themes/selectThemeVariant';
+//import { selectThemeVariant } from '../../themes/selectThemeVariant';
 import { css, cx } from 'emotion';
 
 export interface CallToActionCardProps extends Themeable {
@@ -14,7 +14,7 @@ const getCallToActionCardStyles = (theme: GrafanaTheme) => ({
   wrapper: css`
     label: call-to-action-card;
     padding: ${theme.spacing.lg};
-    background: ${selectThemeVariant({ light: theme.colors.gray6, dark: theme.colors.grayBlue }, theme.type)};
+    background: #1c2751;
     border-radius: ${theme.border.radius.md};
     display: flex;
     flex-direction: column;

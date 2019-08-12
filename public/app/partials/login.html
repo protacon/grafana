@@ -1,7 +1,7 @@
 <div class="login container">
   <div class="login-content">
     <div class="login-branding">
-      <img class="logo-icon" src="public/img/protacon_logo_sloganiton.jpg" alt="Grafana" />
+      <img class="logo-icon" src="public/img/protacon_logo_white_login.png" alt="Protacon" />
       <!-- <div class="logo-wordmark" /> -->
     </div>
     <div class="login-outer-box">
@@ -16,10 +16,10 @@
               placeholder="{{passwordHint}}" aria-label="Password input field">
           </div>
           <div class="login-button-group">
-            <button type="submit" aria-label="Login button" class="btn btn-large p-x-2" ng-if="!loggingIn" ng-click="submit();" ng-class="{'btn-inverse': !loginForm.$valid, 'btn-primary': loginForm.$valid}">
-              Log In
+            <button type="submit" aria-label="Login button" class="btn  p-x-2 btn-inverse" ng-if="!loggingIn" ng-click="submit();">
+              Login
             </button>
-            <button type="submit" class="btn btn-large p-x-2 btn-inverse btn-loading" ng-if="loggingIn">
+            <button type="submit" class="btn  p-x-2 btn-inverse btn-loading" ng-if="loggingIn">
               Logging In<span>.</span><span>.</span><span>.</span>
             </button>
             <div class="small login-button-forgot-password" ng-hide="ldapEnabled || authProxyEnabled">
@@ -69,14 +69,14 @@
             Sign in with {{oauth.generic_oauth.name}}
           </a>
         </div>
-        <div class="login-signup-box" ng-show="!disableUserSignUp">
+        <!-- <div class="login-signup-box" ng-show="!disableUserSignUp">
           <div class="login-signup-title p-r-1">
             New to Grafana?
           </div>
           <a href="signup" class="btn btn-medium btn-signup btn-p-x-2">
             Sign Up
           </a>
-        </div>
+        </div> -->
       </div>
       <div class="login-inner-box remove hidden" id="change-password-view">
         <div class="text-left login-change-password-info">

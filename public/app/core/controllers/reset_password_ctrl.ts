@@ -21,8 +21,8 @@ export class ResetPasswordCtrl {
       main: {
         icon: 'gicon gicon-branding',
         text: 'Reset Password',
-        subTitle: 'Reset your password',
-        breadcrumbs: [{ title: 'Login', url: 'login' }],
+        /* subTitle: 'Reset your password', */
+        /* breadcrumbs: [{ title: 'Login', url: 'login' }], */
       },
     };
 

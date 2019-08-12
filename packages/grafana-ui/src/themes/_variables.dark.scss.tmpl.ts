@@ -20,6 +20,15 @@ $red-base: ${theme.colors.redBase};
 $red-shade: ${theme.colors.redShade};
 $green-base: ${theme.colors.greenBase};
 $green-shade: ${theme.colors.greenShade};
+$ptc-dark-blue: #1C2751;
+$ptc-light-blue: #374EA1;
+$ptc-green: #299B46;
+$ptc-background-diagrams: #6A76A1;
+$ptc-background-menus: #F5F5F5;
+$ptc-logs: #263671;
+$ptc-logs-temp-name: #000000;
+$ptc-gradient-blue: linear-gradient(to right,#1C2751,#374EA1);
+$ptc-sidemenu-link: #212E60;
 
 // Grays
 // -------------------------
@@ -88,12 +97,8 @@ $text-shadow-faint: 1px 1px 4px rgb(45, 45, 45);
 $textShadow: none;
 
 // gradients
-$brand-gradient: linear-gradient(
-  to right,
-  rgba(255, 213, 0, 0.7) 0%,
-  rgba(255, 68, 0, 0.7) 99%,
-  rgba(255, 68, 0, 0.7) 100%
-);
+$brand-gradient: linear-gradient($white 100%);
+
 
 $page-gradient: linear-gradient(180deg, $dark-5 10px, dark-2 100px);
 $edit-gradient: linear-gradient(180deg, $dark-2 50%, $input-black);
@@ -149,9 +154,9 @@ $list-item-shadow: $card-shadow;
 $empty-list-cta-bg: $gray-blue;
 
 // Scrollbars
-$scrollbarBackground: #404357;
-$scrollbarBackground2: $dark-10;
-$scrollbarBorder: black;
+$scrollbarBackground: #1F2C5C;;
+$scrollbarBackground2: #1F2C5C;
+$scrollbarBorder: none;
 
 // Tables
 // -------------------------
@@ -166,8 +171,8 @@ $table-bg-hover: $dark-6;
 $btn-secondary-bg: $blue-base;
 $btn-secondary-bg-hl: $blue-shade;
 
-$btn-primary-bg: $green-base;
-$btn-primary-bg-hl: $green-shade;
+$btn-primary-bg: $ptc-light-blue;
+$btn-primary-bg-hl: $ptc-light-blue;
 
 $btn-success-bg: $green-base;
 $btn-success-bg-hl: $green-shade;
@@ -175,8 +180,8 @@ $btn-success-bg-hl: $green-shade;
 $btn-danger-bg: $red-base;
 $btn-danger-bg-hl: $red-shade;
 
-$btn-inverse-bg: $dark-6;
-$btn-inverse-bg-hl: lighten($dark-6, 4%);
+$btn-inverse-bg: $ptc-light-blue;
+$btn-inverse-bg-hl: $ptc-light-blue;
 $btn-inverse-text-color: $link-color;
 $btn-inverse-text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.1);
 

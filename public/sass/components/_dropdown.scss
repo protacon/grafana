@@ -58,6 +58,7 @@
   border: 1px solid #ccc; // Fallback for IE7-8
   border: 1px solid $dropdownBorder;
   text-align: left;
+  border-radius: 5px;
 
   // Aligns the dropdown menu to right
   &.pull-right {
@@ -108,10 +109,10 @@
   &--menu,
   &--navbar,
   &--sidemenu {
-    background: $menu-dropdown-bg;
-    box-shadow: $menu-dropdown-shadow;
+    background: $ptc-background-menus;
     margin-top: 0px;
     border: none;
+    border-radius: 5px;
 
     > li > a {
       display: flex;
@@ -119,9 +120,10 @@
       border-left: 2px solid transparent;
 
       &:hover {
-        @include left-brand-border-gradient();
+        @include left-brand-border-gradient-without-slice();
         color: $link-hover-color;
-        background: $menu-dropdown-hover-bg !important;
+        background: #d4d4d4 !important;
+        border-radius: 5px;
       }
     }
   }
@@ -137,6 +139,7 @@
 
 .dropdown-item-text {
   flex-grow: 1;
+  color: $ptc-sidemenu-link;
 }
 
 // Hover/Focus state
@@ -147,7 +150,7 @@
 .dropdown-submenu:focus > a {
   text-decoration: none;
   color: $dropdownLinkColorHover;
-  background-color: $dropdownLinkBackgroundHover;
+  background-color: #d4d4d4;
 }
 
 // Active state
@@ -246,7 +249,7 @@
   left: 100%;
   margin-top: 0px;
   margin-left: -1px;
-  @include border-radius(0 6px 6px 6px);
+  @include border-radius(5px 5px 5px 5px);
 }
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
@@ -258,7 +261,7 @@
   bottom: 0;
   margin-top: 0;
   margin-bottom: -2px;
-  @include border-radius(5px 5px 5px 0);
+  @include border-radius(5px 5px 5px 5px);
 }
 
 // Caret to indicate there is a submenu
@@ -287,7 +290,7 @@
   > .dropdown-menu {
     left: -100%;
     margin-left: 10px;
-    @include border-radius(6px 0 6px 6px);
+    @include border-radius(5px 0 5px 5px);
   }
 }
 

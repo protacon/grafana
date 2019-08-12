@@ -5,13 +5,13 @@
       <span class="p-l-1">{{ modalTitle }}</span>
     </h2>
 
-    <ul class="gf-tabs">
+    <!-- <ul class="gf-tabs">
       <li class="gf-tabs-item" ng-repeat="tab in tabs">
         <a class="gf-tabs-link" ng-click="editor.index = $index" ng-class="{active: editor.index === $index}">
           {{::tab.title}}
         </a>
       </li>
-    </ul>
+    </ul> -->
 
     <a class="modal-header-close" ng-click="dismiss();">
       <i class="fa fa-remove"></i>
@@ -56,16 +56,16 @@
   		label="Current time range" label-class="width-12" switch-class="max-width-6"
   		checked="options.forCurrent" on-change="buildUrl()">
   	</gf-form-switch>
-  	<gf-form-switch class="gf-form"
+  <!-- 	<gf-form-switch class="gf-form"
   		label="Template variables" label-class="width-12" switch-class="max-width-6"
   		checked="options.includeTemplateVars" on-change="buildUrl()">
-  	</gf-form-switch>
-  	<div class="gf-form">
+  	</gf-form-switch> -->
+  	<!-- <div class="gf-form">
   		<span class="gf-form-label width-12">Theme</span>
   		<div class="gf-form-select-wrapper width-10">
   			<select class="gf-form-input" ng-model="options.theme" ng-options="f as f for f in ['current', 'dark', 'light']" ng-change="buildUrl()"></select>
   		</div>
-  	</div>
+  	</div> -->
   </div>
 </script>
 
@@ -76,8 +76,9 @@
   	</div>
   	<div class="share-modal-content">
   		<p class="share-modal-info-text">
-  			Create a direct link to this dashboard or panel, customized with the options below.
-  		</p>
+  			Create a direct link to this dashboard or panel.
+		  </p>
+		  <br>
   		<div ng-include src="'shareLinkOptions.html'"></div>
   		<div>
   			<div class="gf-form-group">
